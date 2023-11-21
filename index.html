@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculadora Black</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <form name="Calculator">
+            <input type="text" class="text maincolor" name="text1" disabled><br>
+            <input type="reset" class="text1 orange" name="text12" value="C"><br>
+
+            <input type="button" class="num maincolor" value="7" onclick="displaynum(this.value)">
+            <input type="button" class="num maincolor" value="8" onclick="displaynum(this.value)">
+            <input type="button" class="num maincolor" value="9" onclick="displaynum(this.value)">
+            <input type="button" class="num blue" value="+" onclick="displaynum(this.value)"><br>
+
+            <input type="button" class="num maincolor" value="4" onclick="displaynum(this.value)">
+            <input type="button" class="num maincolor" value="5" onclick="displaynum(this.value)">
+            <input type="button" class="num maincolor" value="6" onclick="displaynum(this.value)">
+            <input type="button" class="num pin" value="-" onclick="displaynum(this.value)"><br>
+
+            <input type="button" class="num maincolor" value="1" onclick="displaynum(this.value)">
+            <input type="button" class="num maincolor" value="2" onclick="displaynum(this.value)">
+            <input type="button" class="num maincolor" value="3" onclick="displaynum(this.value)">
+            <input type="button" class="num gre" value="*" onclick="displaynum(this.value)"><br>
+
+            <input type="button" class="num maincolor" value="." onclick="displaynum(this.value)">
+            <input type="button" class="num maincolor" value="0" onclick="displaynum(this.value)">
+            <input type="button" class="num pur" value="=" onclick="text1.value=eval(text1.value)">
+            <input type="button" class="num ora" value="/" onclick="displaynum(this.value)"><br>
+        </form>
+    </div>
+</body>
+</html>
